@@ -61,7 +61,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-v slide=0 darkwake=0 npci=0x2000 nv_disable=1 GraphicsEnabler=No nvda_drv=1 uia_exclude=HS07;HS08;HS09;HS10;HS12</string>
+		<string>-v slide=0 darkwake=0 npci=0x3000 nvda_drv=1 uia_exclude=HS07;HS08;HS09;HS10;HS12</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -233,38 +233,10 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>BiosReleaseDate</key>
-		<string>06/12/13</string>
-		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>BiosVersion</key>
-		<string>MP61.88Z.0116.B04.1312061508</string>
-		<key>Board-ID</key>
-		<string>Mac-F60DEB81FF30ACF6</string>
-		<key>BoardManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>BoardType</key>
-		<integer>11</integer>
-		<key>ChassisAssetTag</key>
-		<string>Pro-Enclosure</string>
-		<key>ChassisManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>ChassisType</key>
-		<string>06</string>
-		<key>Family</key>
-		<string>Mac Pro</string>
-		<key>Manufacturer</key>
-		<string>Apple Inc.</string>
-		<key>Mobile</key>
-		<false/>
 		<key>ProductName</key>
-		<string>MacPro6,1</string>
+		<string>MacPro5,1</string>
 		<key>SerialNumber</key>
 		<string>C02KR9RIF693</string>
-		<key>Trust</key>
-		<false/>
-		<key>Version</key>
-		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
