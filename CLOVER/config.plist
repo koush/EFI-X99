@@ -150,7 +150,7 @@
 			<true/>
 		</dict>
 		<key>Theme</key>
-		<string>El Capitan</string>
+		<string>Minimalism</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -234,7 +234,7 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>ProductName</key>
-		<string>MacPro5,1</string>
+		<string>MacPro6,1</string>
 		<key>SerialNumber</key>
 		<string>C02KR9RIF693</string>
 	</dict>
@@ -244,8 +244,8 @@
 		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
-        <key>NvidiaWeb</key>
-        <true/>
+		<key>NvidiaWeb</key>
+		<true/>
 	</dict>
 </dict>
 </plist>
