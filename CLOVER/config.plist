@@ -61,7 +61,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-v slide=0 darkwake=0 npci=0x3000 nvda_drv=1 uia_exclude=HS07;HS08;HS09;HS10;HS12</string>
+		<string>-v slide=0 darkwake=0 npci=0x3000 nvda_drv=1 uia_exclude=HS07;HS08;HS09;HS10;HS12 -xcpm</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -175,7 +175,7 @@
 		<key>Debug</key>
 		<false/>
 		<key>FakeCPUID</key>
-		<string>0x0306a0</string>
+		<string>0x0306f0</string>
 		<key>ForceKextsToLoad</key>
 		<array>
 			<string>/System/Library/Extensions/AppleGraphicsControl.kext/Contents/PlugIns/AppleGraphicsDevicePolicy.kext</string>
@@ -183,7 +183,7 @@
 		<key>KernelCpu</key>
 		<false/>
 		<key>KernelHaswellE</key>
-		<true/>
+		<false/>
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>
