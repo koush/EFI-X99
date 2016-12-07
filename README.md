@@ -6,7 +6,7 @@ This repository is the EFI directory (basically, a boot drive) that can boot a m
 
 ## Why Github?
 
-This is the easiest way to make and track changes, and allow others to benefit from the updates I make to my Hackintosh. Not having your EFI in revision control is bad. Eventually you will end up breakign something and not remember what you did.
+This is the easiest way to make and track changes, and allow others to benefit from the updates I make to my Hackintosh. Not having your EFI in revision control is bad. Eventually you will end up breaking something and not remember what you did.
 
 ## Installation
 
