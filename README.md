@@ -53,7 +53,7 @@ rm -rf EFI
 git clone https://github.com/koush/EFI-X99.git EFI
 ```
 
-# Hackintosh Setup
+### Hackintosh Setup
 
 1. Assemble your computer.
 2. The OS drive should already be set up with macOS from a real Mac. Connect it to your Hackintosh if you haven't already.
