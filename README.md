@@ -14,6 +14,8 @@ Additionally, someone using this guide can stay up to date with my changes by si
 
 ### My Hackintosh Hardware
 
+Total Cost: ~$3500 ($500 more if using a PCIe flash drive). A maxed out Mac Pro, for reference, is around ~$10,000, and is dated in comparison.
+
 You need to have mostly the same hardware for this to work. Parts that can not be swapped easily will be noted.
 
 * [Cooler Master HAF XB II EVO, HTPC Computer Case](http://amzn.to/2h4oiqI)
