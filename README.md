@@ -55,6 +55,6 @@ git clone https://github.com/koush/EFI-X99.git EFI
 # Hackintosh Setup
 
 1. Assemble your computer.
-2. After seeding the drive with macOS from a real Mac, connect it to your Hackintosh.
+2. The OS drive should already be set up with macOS from a real Mac. Connect it to your Hackintosh if you haven't already.
 3. Boot into the BIOS. [Update the BIOS](http://www.gigabyte.com/products/product-page.aspx?pid=5658#bios) to the latest (F23, at time of writing) using the Fat32 partitioned USB boot stick that was previously set up.
 4.
