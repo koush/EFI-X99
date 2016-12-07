@@ -97,3 +97,6 @@ This app will modify the following file:
 AGDPfix prevents macOS from erroneously putting your video card to sleep on boot. This app needs to be run after every update (when the file gets clobbered), to fix the computer starting in VESA mode. There's better, long term way, to fix this, but I haven't managed to get it working.
 
 Done!
+
+### XMP
+Ok, maybe not done. Wanna trick out your ride? Enable [XMP](http://www.intel.com/content/www/us/en/gaming/extreme-memory-profile-xmp.html) Profile 1 in the BIOS.
