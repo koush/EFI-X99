@@ -92,13 +92,10 @@ I'm not particularly happy with this part, as it requires modifying a system fil
 
 1. Download and run [AGDPfix](http://www.insanelymac.com/forum/files/file/424-agdpfix/).
 2. Restart.
-This app will modify the following file:
-```
-/System/Library/Extensions/AppleGraphicsControl.kext/Contents/PlugIns/AppleGraphicsDevicePolicy.kext/Contents/Info.plist
-```
-[Here's the change](https://github.com/koush/EFI-X99/blob/master/AppleGraphicsControl.kext.diff) it makes in case one is curious, or wants to apply it manually (and use KextUtility to rebuild the kext cache). Just use the app though. You'll screw this up.
 
 AGDPfix prevents macOS from erroneously putting your video card to sleep on boot. This app needs to be run after every update (when the file gets clobbered), to fix the computer starting in VESA mode. There's better, long term way, to fix this, but I haven't managed to get it working.
+
+[Here's the change](https://github.com/koush/EFI-X99/blob/master/AppleGraphicsControl.kext.diff) it makes in case one is curious, or wants to apply it manually (and use KextUtility to rebuild the kext cache). Just use the app though. You'll screw this up.
 
 Done!
 
