@@ -7,7 +7,8 @@ This EFI will only work with my specific setup, but may work with similar ones v
 
 ## Why Github?
 
-This is the easiest way to make and track changes, and allow others to benefit from the updates I make to my Hackintosh. Not having your EFI in revision control is bad. Eventually you will end up breaking something and not remember what you did.
+This is the easiest way to make and track changes to improve support and manage OS updates (as needed). Not having your EFI in revision control is bad. Eventually you will end up breaking something and not remember what you did.
+Additionally, someone using this guide can stay up to date with my changes by simply pulling down the latest files through Github.
 
 ## Installation
 
