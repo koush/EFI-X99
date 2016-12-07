@@ -80,15 +80,7 @@ git clone https://github.com/koush/EFI-X99.git EFI
  * Use the same options as before.
   * Install for UEFI booting only
   * Install Clover in the ESP.
- * Run the same shell commands as before to copy this repository onto your OS drive:
-```sh
-cd /Volumes/ESP/
-# wipe this out to overwrite with this EFI
-rm -rf EFI
-# check out this EFI
-git clone https://github.com/koush/EFI-X99.git EFI
-# If you chose a different processor, modify the aforementioned file in VoodooTSCSync.kext.
-```
+ * Run the same shell commands as before to copy this repository onto your OS drive.
+10. Remember those busted graphics? Just need to install the drivers now. [Get the appopriate download for your version of macOS](http://www.insanelymac.com/forum/topic/306535-nvidia-web-driver-updates-for-el-capitan-update-10242016/) and install it, and restart. You can boot off the hard drive now.
 
-### Booting off your OS Drive
-1. 
+Done!
