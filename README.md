@@ -17,7 +17,6 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 * [Gigabyte GeForce GTX 980Ti](http://amzn.to/2h1rDXd) [3]
 * [Samsung 840 EVO 1TB SSD](http://amzn.to/2g9lczB) [5]
 * [BCM94360CD Wireless and Bluetooth Card](http://amzn.to/2g8AQ3m) [4]
-*
 
 1. This motherboard is a little wonky, so while other Gigabyte or Asus X99 motherboards may work, my EFI repository may not work with it. Change at your own risk.
 2. If you get a different CPU, you MUST modify [this line](https://github.com/koush/EFI-X99/blob/master/CLOVER/kexts/Other/VoodooTSCSync.kext/Contents/Info.plist#L54) in your checkout with the correct IOCPUNumber value. Each CPU core has two hyper threading cores. Subtract 1 to get the max IOCPUNumber (zero indexed). _IOCPUNumber = (Number of CPU Cores * 2) - 1_. For example, the 6950X has 10 cores. So (10*2)-1=19, as shown in the link.
