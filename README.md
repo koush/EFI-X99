@@ -28,7 +28,7 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 0. Attach your Hackintosh hard drive to a real Mac.
 1. Use Disk Utility to erase and create a GPT drive with an HFS+ partition.
 2. On the Mac, download the latest macOS (Sierra, 10.12.1 at time of writing).
-3. Using that Mac, change install target, and install Sierra to the attached Hackintosh hard drive.
+3. Using that Mac, change install target, and install macOS to the attached Hackintosh hard drive.
 
 ### Boot USB Setup
 
