@@ -57,4 +57,9 @@ git clone https://github.com/koush/EFI-X99.git EFI
 1. Assemble your computer.
 2. The OS drive should already be set up with macOS from a real Mac. Connect it to your Hackintosh if you haven't already.
 3. Boot into the BIOS. [Update the BIOS](http://www.gigabyte.com/products/product-page.aspx?pid=5658#bios) to the latest (F23, at time of writing) using the Fat32 partitioned USB boot stick that was previously set up.
-4.
+4. Boot from the USB stick. You'll see 2 or 3 options show up in the Clover bootloader.
+ * Boot Clover
+ * Boot macOS
+ * Boot Recovery
+5. Boot macOS
+6. You should be fully booted in with shitty VESA graphics. You just need the Nvidia drivers. [Install the correct version for your version of macOS](http://www.insanelymac.com/forum/topic/306535-nvidia-web-driver-updates-for-el-capitan-update-10242016/) and restart.
