@@ -1,12 +1,20 @@
 # My Hackintosh
 
-This repository is the EFI directory (basically a boot drive) that can boot a Sierra (10.11.1) installation. This EFI will only work with my specific setup, but may work with similar ones via tweaking.
+This repository is the EFI directory (basically, a boot drive) that can boot a Sierra (10.12.1 at time of writing) installation. This EFI will only work with my specific setup, but may work with similar ones via tweaking.
 
 ## Installation
 
 ### My Hackintosh Hardware
 
-
+[Cooler Master HAF XB II EVO, HTPC Computer Case](http://amzn.to/2h4oiqI)
+[Corsair RMx Series, RM750x, 750W, Fully Modular Power Supply](http://amzn.to/2g8zbe4)
+[Gigabyte X99P-SLI Motherboard](http://amzn.to/2g8vxAR)
+[2 x Corsair Vengeance LPX 32GB DDR4 3200](http://amzn.to/2h4l729)
+[Intel Core i7-6950X Processor](http://amzn.to/2gBbozC)
+[MasterAir Pro 3 CPU Air Cooler](http://amzn.to/2h4pL0k)
+[Gigabyte GeForce GTX 980Ti](http://amzn.to/2h1rDXd)
+[BCM94360CD Wireless Network and Bluetooth Card BCM94360CD](http://amzn.to/2g8AQ3m)
+[Samsung 840 EVO 1TB 2.5-Inch SATA III Internal SSD](http://amzn.to/2g9lczB)
 
 ### Sierra Setup
 0. Attach your Hackintosh hard drive to a real Mac.
