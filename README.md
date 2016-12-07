@@ -6,22 +6,33 @@ This repository is the EFI directory (basically, a boot drive) that can boot a S
 
 ### My Hackintosh Hardware
 
+You need to have mostly the same hardware for this to work. Parts that can not be swapped easily will be noted.
+
 * [Cooler Master HAF XB II EVO, HTPC Computer Case](http://amzn.to/2h4oiqI)
 * [Corsair RMx Series, RM750x, 750W, Fully Modular Power Supply](http://amzn.to/2g8zbe4)
-* [Gigabyte X99P-SLI Motherboard](http://amzn.to/2g8vxAR)
+* [Gigabyte X99P-SLI Motherboard](http://amzn.to/2g8vxAR) [1]
 * [2 x Corsair Vengeance LPX 32GB DDR4 3200](http://amzn.to/2h4l729)
-* [Intel Core i7-6950X Processor](http://amzn.to/2gBbozC)
+* [Intel Core i7-6950X Processor](http://amzn.to/2gBbozC) [2]
 * [MasterAir Pro 3 CPU Air Cooler](http://amzn.to/2h4pL0k)
-* [Gigabyte GeForce GTX 980Ti](http://amzn.to/2h1rDXd)
-* [BCM94360CD Wireless Network and Bluetooth Card BCM94360CD](http://amzn.to/2g8AQ3m)
-* [Samsung 840 EVO 1TB 2.5-Inch SATA III Internal SSD](http://amzn.to/2g9lczB)
+* [Gigabyte GeForce GTX 980Ti](http://amzn.to/2h1rDXd) [3]
+* [BCM94360CD Wireless Network and Bluetooth Card BCM94360CD](http://amzn.to/2g8AQ3m) [4]
+* [Samsung 840 EVO 1TB 2.5-Inch SATA III Internal SSD](http://amzn.to/2g9lczB) [5]
+
+1. This motherboard is a little wonky, so while other Gigabyte or Asus X99 motherboards may work, my EFI repository may not work with it. Change at your own risk.
+2. If you get a different CPU, you MUST modify [this line](https://github.com/koush/EFI-X99/blob/master/CLOVER/kexts/Other/VoodooTSCSync.kext/Contents/Info.plist#L54) in your checkout with the correct IOCPUNumber value.
+```
+# Each CPU core has two hyper threading cores. Subtract 1 to get the max IOCPUNumber (zero indexed).
+IOCPUNumber = (Number of CPU Cores * 2) - 1
+```
+3. Do not get any Pascal (1070, 1080, or Titan X) hardware. It is not supported on Mac yet. I recommend sticking with recent NVidia hardware. You must install [NVidia Web Drivers](http://www.insanelymac.com/forum/topic/306535-nvidia-web-driver-updates-for-el-capitan-update-10242016/) after booting. That will get your graphics card drivers installed, and you won't be stuck in VESA graphics mode.
+4. Any USB wifi will work. I chose this card because this is the the best/easiest way to get AirDrop working. Totally optional though. You don't have to get any wifi at all.
+5. Any SSD or HDD drive works. Not sure about the new M.2 drives yet though.
 
 ### Sierra Setup
 0. Attach your Hackintosh hard drive to a real Mac.
 1. Use Disk Utility to erase and create a GPT drive with an HFS+ partition.
 2. On the Mac, download Sierra.
 3. Using that Mac, change install target, and install Sierra to the attached Hackintosh hard drive.
-4. Put this hard drive into your Hackintosh. 
 
 ### Boot USB Setup
 
