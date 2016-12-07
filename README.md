@@ -42,22 +42,30 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 1. Use Disk Utility to erase and create a GPT drive with a single HFS+ partition.
 2. On the Mac, download the latest macOS (Sierra, 10.12.1 at time of writing).
 3. Using that Mac, change install target, and install macOS to the attached Hackintosh hard drive.
+4. Insert a USB drive into your real Mac. This will be used to update your BIOS.
+  * Use Disk Utility to erase the drive and create a GPT drive with a single Fat32 partition. Fat32 is mandatory for the BIOS update process.
+  * [Download the latest BIOS](http://www.gigabyte.com/products/product-page.aspx?pid=5658#bios) to the latest (F23, at time of writing) using the Fat32 partitioned USB boot stick that was previously set up.
+  * [Copy the BIOS file to the Fat32 partition and name it GIGABYTE.bin](https://www.gigabytenordic.com/update-bios-using-q-flash-plus-x99-motherboards/).
 
-### Boot USB Setup
+### Making your Drive Bootable
 
-This EFI directory lives on an ESP (EFI System Partition). This partition is typically hidden from operating systems. On the real Mac, again:
+Obviously, you want to make your macOS drive bootable. However, sometimes when tweaking things, the OS drive will fail to boot. It is *extremely* recommended to have a backup bootable USB stick (which you already formatted above). Make tweaks to the EFI boot on your macOS drive, and if it fails to boot, fall back to the USB stick to boot. The USB boot stick is optional, but encouraged.
 
-0. Download Clover bootloader (I am using r3949 at time of writing): https://sourceforge.net/projects/cloverefiboot/files/Installer/
-1. Use Disk Utility to erase and create a GPT drive with a single Fat32 partition. The Fat32 partition is not where the EFI is stored, as the ESP is an automatically created hidden partition of around 100MB in size. The Fat32 partition is necessary to do a BIOS update later.
-2. Install Clover to the USB stick using these options:
-  * Change Install Location to the USB Stick (DO NOT FORGET THIS!!!!)
+This EFI directory lives on an ESP (EFI System Partition). This partition is typically hidden from operating systems.
+
+First, get the prerequisite [Clover Bootloader](https://sourceforge.net/projects/cloverefiboot/files/Installer/) (I am using r3949 at time of writing).
+
+On the real Mac, again. You will be performing the following steps (optionally twice, if creating a USB boot stick as well):
+
+1. Install Clover to the target drive (Hackintosh hard drive or USB Stick) using these options:
+  * Change Install Location to the target drive (DO NOT FORGET THIS!!!!)
   * Customize, with only the following checked:
     * Install for UEFI booting only
     * Install Clover in the ESP.
-3. Don't delete the Clover PKG file. Copy it to the Fat32 partition on the USB stick. You'll need it again later.
-4. After installation of Clover is complete, the installer leaves the ESP mounted.
-5. In that ESP, there will be an EFI directory. So typically, the directory structure will be as follows _/Volumes/ESP/EFI_.
-6. In a command prompt:
+    * Don't delete the Clover PKG file when the installation ends, you may need it later.
+2. After installation of Clover is complete, the installer leaves the ESP mounted.
+3. In that ESP, there will be an EFI directory. So typically, the directory structure will be as follows _/Volumes/ESP/EFI_.
+4. In Terminal:
 ```sh
 cd /Volumes/ESP/
 # wipe this out to overwrite with this EFI
@@ -65,7 +73,10 @@ rm -rf EFI
 # check out this EFI
 git clone https://github.com/koush/EFI-X99.git EFI
 # If you chose a different processor, modify the aforementioned file in VoodooTSCSync.kext.
+# Exit the Terminal and unmount ESP! 
 ```
+
+_Optional: Repeat the above steps with the USB stick._
 
 ### Hackintosh Setup
 
@@ -74,21 +85,13 @@ git clone https://github.com/koush/EFI-X99.git EFI
 3. Boot into the BIOS. [Update the BIOS](http://www.gigabyte.com/products/product-page.aspx?pid=5658#bios) to the latest (F23, at time of writing) using the Fat32 partitioned USB boot stick that was previously set up.
   * You may want to shut down and reset your CMOS by connecting the CMOS reset pins.
 4. Restart and get into the BIOS again. Load Optimized Defaults.
-5. Insert your USB drive, and boot from it (spam F12 at POST for a boot menu and select the UEFI USB drive).
-6. You'll see 2 or 3 options show up in the Clover bootloader.
+5. You'll see 2 or 3 options show up in the Clover bootloader.
  * Boot Clover
  * Boot macOS
  * Boot Recovery
-7. Choose Boot macOS
-8. You should be fully booted in with ancient VESA graphics (low resolution and framerate). We'll fix this in a sec.
-9. Let's set up booting off the actual OS drive now.
-  * Install Clover from the USB stick, but this time install to the macOS drive on the Hackintosh.
-  * Use the same options as before.
-    * Install for UEFI booting only
-    * Install Clover in the ESP.
- * Run the same shell commands as before to copy this repository onto your OS drive.
- * You can boot off the hard drive now.
-10. Remember those busted graphics? Just need to install the drivers now. [Get the appopriate download for your version of macOS](http://www.insanelymac.com/forum/topic/306535-nvidia-web-driver-updates-for-el-capitan-update-10242016/) and install it.
+6. Choose Boot macOS
+7. You should be fully booted in with ancient VESA graphics (low resolution and framerate). We'll fix this in a sec.
+8. Remember those busted graphics? Just need to install the drivers now. [Get the appopriate download for your version of macOS](http://www.insanelymac.com/forum/topic/306535-nvidia-web-driver-updates-for-el-capitan-update-10242016/) and install it.
  * Hold off on restarting. Read on below in the Graphics section.
 
 ### Graphics
