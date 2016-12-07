@@ -62,4 +62,5 @@ git clone https://github.com/koush/EFI-X99.git EFI
  * Boot macOS
  * Boot Recovery
 5. Boot macOS
-6. You should be fully booted in with shitty VESA graphics. You just need the Nvidia drivers. [Install the correct version for your version of macOS](http://www.insanelymac.com/forum/topic/306535-nvidia-web-driver-updates-for-el-capitan-update-10242016/) and restart.
+6. You should be fully booted in with ancient VESA graphics (low resolution and framerate). You just need the Nvidia drivers. [Install the correct version for your version of macOS](http://www.insanelymac.com/forum/topic/306535-nvidia-web-driver-updates-for-el-capitan-update-10242016/) and restart.
+7. Done!
