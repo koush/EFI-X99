@@ -87,6 +87,7 @@ git clone https://github.com/koush/EFI-X99.git EFI
 
 ### Graphics
 I'm not particularly happy with this part, as it requires modifying a system file every time there is an update.
+
 1. Download and run [AGDPFix](http://www.insanelymac.com/forum/files/file/424-agdpfix/).
 2. Restart.
 This app will modify the following file:
