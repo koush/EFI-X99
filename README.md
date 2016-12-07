@@ -99,4 +99,4 @@ AGDPfix prevents macOS from erroneously putting your video card to sleep on boot
 Done!
 
 ### XMP
-Ok, maybe not done. Wanna trick out your ride? Enable [XMP](http://www.intel.com/content/www/us/en/gaming/extreme-memory-profile-xmp.html) Profile 1 in the BIOS.
+Ok, maybe not done. Wanna trick out your ride? Enable [XMP](http://www.intel.com/content/www/us/en/gaming/extreme-memory-profile-xmp.html) Profile 1 in the BIOS. It's overclocking yoru RAM, so it may make your system unstable. That's why I didn't have it enabled out the gate.
