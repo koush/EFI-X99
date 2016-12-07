@@ -53,6 +53,7 @@ cd /Volumes/ESP/
 rm -rf EFI
 # check out this EFI
 git clone https://github.com/koush/EFI-X99.git EFI
+# If you chose a different processor, modify the aforementioned file in VoodooTSCSync.kext.
 ```
 
 ### Hackintosh Setup
