@@ -35,6 +35,8 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 4. Any USB wifi will work. I chose this card because this is the the best/easiest way to get AirDrop working. Totally optional though. You don't have to get any wifi at all.
 5. Any SSD or HDD drive works. Not sure about the new M.2 drives yet though.
 
+[Full List of Hardware](http://a.co/7V7E9QI)
+
 ### macOS Preparation
 0. Attach your Hackintosh OS drive to a real Mac. Use a [USB enclosure](http://amzn.to/2h4wuY0) to do this.
 1. Use Disk Utility to erase and create a GPT drive with a single HFS+ partition.
