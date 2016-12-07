@@ -81,6 +81,18 @@ git clone https://github.com/koush/EFI-X99.git EFI
   * Install for UEFI booting only
   * Install Clover in the ESP.
  * Run the same shell commands as before to copy this repository onto your OS drive.
-10. Remember those busted graphics? Just need to install the drivers now. [Get the appopriate download for your version of macOS](http://www.insanelymac.com/forum/topic/306535-nvidia-web-driver-updates-for-el-capitan-update-10242016/) and install it, and restart. You can boot off the hard drive now.
+ * You can boot off the hard drive now.
+10. Remember those busted graphics? Just need to install the drivers now. [Get the appopriate download for your version of macOS](http://www.insanelymac.com/forum/topic/306535-nvidia-web-driver-updates-for-el-capitan-update-10242016/) and install it.
+ * Hold off on restarting. Read on below in the Graphics section.
+
+### Graphics
+I'm not particularly happy with this part, as it requires modifying a system file every time there is an update.
+1. Download and run [AGDPFix](http://www.insanelymac.com/forum/files/file/424-agdpfix/).
+2. Restart.
+This app will modify the following file:
+```
+/System/Library/Extensions/AppleGraphicsControl.kext/Contents/PlugIns/AppleGraphicsDevicePolicy.kext/Contents/Info.plist
+```
+This prevents macOS from erroneously putting your video card to sleep on boot. This app needs to be run after every update (when the file gets clobbered), to fix the computer starting in VESA mode. There's better, long term way, to fix this, but I haven't managed to get it working.
 
 Done!
