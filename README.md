@@ -15,7 +15,7 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 * [Intel Core i7-6950X Processor](http://amzn.to/2gBbozC) [2]
 * [MasterAir Pro 3 CPU Air Cooler](http://amzn.to/2h4pL0k)
 * [Gigabyte GeForce GTX 980Ti](http://amzn.to/2h1rDXd) [3]
-* [BCM94360CD Wireless Network and Bluetooth Card](http://amzn.to/2g8AQ3m) [4]
+* [BCM94360CD Wireless and Bluetooth Card](http://amzn.to/2g8AQ3m) [4]
 * [Samsung 840 EVO 1TB SSD](http://amzn.to/2g9lczB) [5]
 
 1. This motherboard is a little wonky, so while other Gigabyte or Asus X99 motherboards may work, my EFI repository may not work with it. Change at your own risk.
