@@ -26,7 +26,7 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 5. Any SSD or HDD drive works. Not sure about the new M.2 drives yet though.
 
 ### macOS Preparation
-0. Attach your Hackintosh OS drive to a real Mac.
+0. Attach your Hackintosh OS drive to a real Mac. Use a USB enclosure or something.
 1. Use Disk Utility to erase and create a GPT drive with a single Fat32 partition. The Fat32 partition is not where the EFI is stored, as the ESP is an automatically created hidden partition of around 100MB in size. The Fat32 partition will potentially be used to do a BIOS update later in these steps.
 2. On the Mac, download the latest macOS (Sierra, 10.12.1 at time of writing).
 3. Using that Mac, change install target, and install macOS to the attached Hackintosh hard drive.
