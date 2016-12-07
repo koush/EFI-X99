@@ -24,9 +24,9 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 4. Any USB wifi will work. I chose this card because this is the the best/easiest way to get AirDrop working. Totally optional though. You don't have to get any wifi at all.
 5. Any SSD or HDD drive works. Not sure about the new M.2 drives yet though.
 
-### macOS Setup
+### macOS Preparation
 0. Attach your Hackintosh hard drive to a real Mac.
-1. Use Disk Utility to erase and create a GPT drive with an HFS+ partition.
+1. Use Disk Utility to erase and create a GPT drive with a single Fat32 partition. The Fat32 partition is not where the EFI is stored, as the ESP is an automatically created hidden partition of around 100MB in size. The Fat32 partition will potentially be used to do a BIOS update later in these steps.
 2. On the Mac, download the latest macOS (Sierra, 10.12.1 at time of writing).
 3. Using that Mac, change install target, and install macOS to the attached Hackintosh hard drive.
 
@@ -52,3 +52,9 @@ rm -rf EFI
 git clone https://github.com/koush/EFI-X99.git EFI
 ```
 
+# Hackintosh Setup
+
+1. Assemble your computer.
+2. After seeding the drive with macOS from a real Mac, connect it to your Hackintosh.
+3. Boot into the BIOS. [Update the BIOS](http://www.gigabyte.com/products/product-page.aspx?pid=5658#bios) to the latest (F23, at time of writing) using the Fat32 partitioned USB boot stick that was previously set up.
+4.
