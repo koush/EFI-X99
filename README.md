@@ -96,6 +96,7 @@ This app will modify the following file:
 ```
 /System/Library/Extensions/AppleGraphicsControl.kext/Contents/PlugIns/AppleGraphicsDevicePolicy.kext/Contents/Info.plist
 ```
+Here's the change it makes in case one is curious, or wants to apply it manually (and use KextUtility to rebuild the kext cache). Just use the app though. You'll screw this up.
 ```diff
 diff --git a/Contents/PlugIns/AppleGraphicsDevicePolicy.kext/Contents/Info.plist b/Contents/PlugIns/AppleGraphicsDevicolicy.kext/Contents/Info.plist
 index 57d9acf..72d9fc3 100644
