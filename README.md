@@ -44,7 +44,7 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 3. Run the macOS Installer.
   * Before starting the install, change install target, and point it to the attached Hackintosh hard drive.
 4. Insert a USB drive into your real Mac. This will be used to update your BIOS.
-  * Use Disk Utility to erase the drive and create a GPT drive with a single Fat32 partition. Fat32 is mandatory for the BIOS update process.
+  * Use Disk Utility to erase the USB stick and create a GPT drive with a single Fat32 partition. Fat32 is mandatory for the BIOS update process.
   * [Download the latest BIOS](http://www.gigabyte.com/products/product-page.aspx?pid=5658#bios) to the latest (F23, at time of writing) using the Fat32 partitioned USB boot stick that was previously set up.
   * [Copy the BIOS file to the Fat32 partition and name it GIGABYTE.bin](https://www.gigabytenordic.com/update-bios-using-q-flash-plus-x99-motherboards/).
 
