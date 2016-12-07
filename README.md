@@ -82,7 +82,7 @@ _Optional: Repeat the above steps with the USB stick._
 
 1. Assemble your computer.
 2. The OS drive should already be set up with macOS from a real Mac. Connect it to your Hackintosh if you haven't already.
-3. Boot into the BIOS. [Update the BIOS](http://www.gigabyte.com/products/product-page.aspx?pid=5658#bios) to the latest (F23, at time of writing) using the Fat32 partitioned USB boot stick that was previously set up.
+3. Boot into the BIOS. [Update the BIOS](https://www.gigabytenordic.com/update-bios-using-q-flash-plus-x99-motherboards/) to the latest (F23, at time of writing) using the Fat32 partitioned USB boot stick that was previously set up.
   * You may want to shut down and reset your CMOS by connecting the CMOS reset pins.
 4. Restart and get into the BIOS again. Load Optimized Defaults.
 5. You'll see 2 or 3 options show up in the Clover bootloader.
