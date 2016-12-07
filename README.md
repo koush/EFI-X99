@@ -46,8 +46,8 @@ This EFI directory lives on an ESP (EFI System Partition). This partition is typ
 2. Install Clover to the USB stick using these options:
  * Change Install Location to the USB Stick (DO NOT FORGET THIS!!!!)
  * Customize, with only the following checked:
-  * Install for UEFI booting only
-  * Install Clover in the ESP.
+   * Install for UEFI booting only
+   * Install Clover in the ESP.
 3. Don't delete the Clover PKG file. Copy it to the Fat32 partition on the USB stick. You'll need it again later.
 4. After installation of Clover is complete, the installer leaves the ESP mounted.
 5. In that ESP, there will be an EFI directory. So typically, the directory structure will be as follows _/Volumes/ESP/EFI_.
