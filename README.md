@@ -4,6 +4,10 @@ This repository is the EFI directory (basically, a boot drive) that can boot a m
 
 ![macpro6_1_-_geekbench_browser](https://cloud.githubusercontent.com/assets/73924/20958327/f1370bc8-bc09-11e6-823b-833d1da15cbd.png)
 
+## Why Github?
+
+This is the easiest way to make and track changes, and allow others to benefit from the updates I make to my Hackintosh. Not having your EFI in revision control is bad. Eventually you will end up breakign something and not remember what you did.
+
 ## Installation
 
 ### My Hackintosh Hardware
