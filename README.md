@@ -44,10 +44,10 @@ This EFI directory lives on an ESP (EFI System Partition). This partition is typ
 0. Download Clover bootloader (I am using r3949 at time of writing): https://sourceforge.net/projects/cloverefiboot/files/Installer/
 1. Use Disk Utility to erase and create a GPT drive with a single Fat32 partition. The Fat32 partition is not where the EFI is stored, as the ESP is an automatically created hidden partition of around 100MB in size. The Fat32 partition is necessary to do a BIOS update later.
 2. Install Clover to the USB stick using these options:
- * Change Install Location to the USB Stick (DO NOT FORGET THIS!!!!)
- * Customize, with only the following checked:
-   * Install for UEFI booting only
-   * Install Clover in the ESP.
+  * Change Install Location to the USB Stick (DO NOT FORGET THIS!!!!)
+  * Customize, with only the following checked:
+    * Install for UEFI booting only
+    * Install Clover in the ESP.
 3. Don't delete the Clover PKG file. Copy it to the Fat32 partition on the USB stick. You'll need it again later.
 4. After installation of Clover is complete, the installer leaves the ESP mounted.
 5. In that ESP, there will be an EFI directory. So typically, the directory structure will be as follows _/Volumes/ESP/EFI_.
@@ -76,10 +76,10 @@ git clone https://github.com/koush/EFI-X99.git EFI
 7. Choose Boot macOS
 8. You should be fully booted in with ancient VESA graphics (low resolution and framerate). We'll fix this in a sec.
 9. Let's set up booting off the actual OS drive now.
- * Install Clover from the USB stick, but this time install to the macOS drive on the Hackintosh.
- * Use the same options as before.
-  * Install for UEFI booting only
-  * Install Clover in the ESP.
+  * Install Clover from the USB stick, but this time install to the macOS drive on the Hackintosh.
+  * Use the same options as before.
+    * Install for UEFI booting only
+    * Install Clover in the ESP.
  * Run the same shell commands as before to copy this repository onto your OS drive.
  * You can boot off the hard drive now.
 10. Remember those busted graphics? Just need to install the drivers now. [Get the appopriate download for your version of macOS](http://www.insanelymac.com/forum/topic/306535-nvidia-web-driver-updates-for-el-capitan-update-10242016/) and install it.
