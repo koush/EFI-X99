@@ -1,6 +1,6 @@
 # My Hackintosh
 
-This repository is the EFI directory (basically, a boot drive) that can boot a Sierra (10.12.1 at time of writing) installation. This EFI will only work with my specific setup, but may work with similar ones via tweaking.
+This repository is the EFI directory (basically, a boot drive) that can boot a macOS (10.12.1, at time of writing) installation. This EFI will only work with my specific setup, but may work with similar ones via tweaking.
 
 ## Installation
 
@@ -24,10 +24,10 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 4. Any USB wifi will work. I chose this card because this is the the best/easiest way to get AirDrop working. Totally optional though. You don't have to get any wifi at all.
 5. Any SSD or HDD drive works. Not sure about the new M.2 drives yet though.
 
-### Sierra Setup
+### macOS Setup
 0. Attach your Hackintosh hard drive to a real Mac.
 1. Use Disk Utility to erase and create a GPT drive with an HFS+ partition.
-2. On the Mac, download Sierra.
+2. On the Mac, download the latest macOS (Sierra, 10.12.1 at time of writing).
 3. Using that Mac, change install target, and install Sierra to the attached Hackintosh hard drive.
 
 ### Boot USB Setup
