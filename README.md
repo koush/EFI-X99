@@ -62,7 +62,7 @@ First, get the prerequisite [Clover Bootloader](https://sourceforge.net/projects
 
 On the real Mac, again. You will be performing the following steps (optionally twice, if creating a USB boot stick as well):
 
-1. Install Clover to the target drive (Hackintosh hard drive or USB Stick) using these options:
+1. Install Clover to the target drive (Hackintosh Drive or USB Stick) using these options:
   * Change Install Location to the target drive (DO NOT FORGET THIS!!!!)
   * Customize, with only the following checked:
     * Install for UEFI booting only
