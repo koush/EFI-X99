@@ -50,7 +50,7 @@ You need to have mostly the same hardware for this to work. Parts that can not b
   * Use Disk Utility to erase the USB stick and create a GPT drive with a single Fat32 partition. Fat32 is mandatory for the BIOS update process.
   * [Download the latest BIOS](http://www.gigabyte.com/products/product-page.aspx?pid=5658#bios) (F23, at time of writing).
   * [Unzip and copy the BIOS file to the Fat32 partition](https://www.gigabytenordic.com/update-bios-using-q-flash-plus-x99-motherboards/).
-    * Make sure the BIOS file is named GIGABYTE.bin as the previous link instructs. This ia the file name required by the BIOS Updater.
+    * Make sure the BIOS file is named GIGABYTE.bin as the previous link instructs. This is the file name required by the BIOS Updater.
 
 ### Making your Drive Bootable
 
