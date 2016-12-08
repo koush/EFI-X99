@@ -39,7 +39,7 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 
 ### macOS Preparation
 0. Attach your Hackintosh OS drive to a real Mac. Use a [USB enclosure](http://amzn.to/2h4wuY0) to do this.
-1. Use Disk Utility to erase and create a GPT drive with a single HFS+ partition.
+1. Use Disk Utility to erase and create a GPT drive with a single _Mac OS Extended (Journaled)_ partition.
 2. On the Mac, download the latest macOS (Sierra, 10.12.1 at time of writing).
 3. Run the macOS Installer.
   * Before starting the install, change install target, and point it to the attached Hackintosh hard drive.
