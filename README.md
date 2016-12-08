@@ -37,7 +37,7 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 
 [Full List of Hardware](http://a.co/7V7E9QI)
 
-### macOS Preparation
+### macOS Drive Preparation
 0. Insert a USB drive into your real Mac. This will be used to update your BIOS. It will also optionally serve as a USB boot stick. _Note:_ If your BIOS is up to date and you do not want a USB boot stick, you can skip this step.
   * Use Disk Utility to erase the USB stick and create a GPT drive with a single Fat32 partition. Fat32 is mandatory for the BIOS update process.
   * [Download the latest BIOS](http://www.gigabyte.com/products/product-page.aspx?pid=5658#bios) (F23, at time of writing).
@@ -47,12 +47,6 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 2. Use Disk Utility to erase and create a GPT drive.
   * _Mac OS Extended (Journaled)_ format
   * Name can be anything you want
-3. On the Mac, download the latest macOS Installer (Sierra, 10.12.1 at time of writing).
-4. Run the Install macOS app.
-  * Before starting the install, click _Show All Disks_, and point it to the attached Hackintosh Drive.
-  * Install to the Hackintosh Drive
-5. The Mac will restart to complete the install, and then will restart into the new OS installation.
-6. Complete the installation, and reboot back into 
 
 ### Making your Drive Bootable
 
@@ -85,6 +79,16 @@ git clone https://github.com/koush/EFI-X99.git EFI
 ```
 
 _Optional: Repeat the above steps with the USB stick._
+
+# Installing macOS
+
+1. On the Mac, download the latest macOS Installer (Sierra, 10.12.1 at time of writing).
+2. Run the Install macOS app.
+  * Before starting the install, click _Show All Disks_, and point it to the attached Hackintosh Drive.
+  * Install to the Hackintosh Drive
+3. The Mac will restart to complete the install, and then will restart into the new OS installation.
+4. Complete the installation, shut down, and disconnect the drive.
+
 
 ### Hackintosh Setup
 
