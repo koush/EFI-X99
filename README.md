@@ -127,7 +127,7 @@ This will boot you without graphics acceleration. Then, you can fix the black sc
   * Easy Method (must reapply after every macOS update): Modify AppleGraphicsControl.kext using AGDPfix.
     * Download and run [AGDPfix](http://www.insanelymac.com/forum/files/file/424-agdpfix/).
     * Restart.
-    * AGDPfix needs to be run after every update (when the file gets clobbered), to fix the computer starting in VESA mode.
+    * AGDPfix needs to be run after every update (because the kext file change gets clobbered).
     * [Here's the change](https://github.com/koush/EFI-X99/blob/master/AppleGraphicsControl.kext.diff) it makes in case one is curious, or wants to apply it manually (and use KextUtility to rebuild the kext cache). Just use the app though. You'll screw this up.
 
 #### Credits
