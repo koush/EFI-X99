@@ -91,7 +91,7 @@ _Optional: Repeat the above steps with the USB stick._
 2. Run the Install macOS app.
   * Before starting the install, click _Show All Disks_, and point it to the attached Hackintosh Drive.
   * Install to the Hackintosh Drive
-3. The Mac will restart to complete the install, and then will restart into the new OS installation.
+3. The Mac will restart to complete the install, and then will restart into the new OS installation on your Hackintosh drive.
 4. Complete the installation, shut down, and disconnect the drive.
 
 
