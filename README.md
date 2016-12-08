@@ -37,12 +37,15 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 
 [Full List of Hardware](http://a.co/7V7E9QI)
 
+### macOS Boot USB and BIOS Update Preparation (Optional)
+0. This step is optional if you do not want a bootable USB stick and your BIOS is already up to date.
+1. Insert a USB drive into your real Mac. This will be used to update your BIOS. It will also optionally serve as a USB boot stick.
+2. Use Disk Utility to erase the USB stick and create a GPT drive with a single Fat32 partition. Fat32 is mandatory for the BIOS update process.
+3. [Download the latest BIOS](http://www.gigabyte.com/products/product-page.aspx?pid=5658#bios) (F23, at time of writing).
+4. [Unzip and copy the BIOS file to the Fat32 partition](https://www.gigabytenordic.com/update-bios-using-q-flash-plus-x99-motherboards/).
+5. Make sure the BIOS file is named GIGABYTE.bin as the previous link instructs. This is the file name required by the BIOS Updater.
+
 ### macOS Drive Preparation
-0. Insert a USB drive into your real Mac. This will be used to update your BIOS. It will also optionally serve as a USB boot stick. _Note:_ If your BIOS is up to date and you do not want a USB boot stick, you can skip this step.
-  * Use Disk Utility to erase the USB stick and create a GPT drive with a single Fat32 partition. Fat32 is mandatory for the BIOS update process.
-  * [Download the latest BIOS](http://www.gigabyte.com/products/product-page.aspx?pid=5658#bios) (F23, at time of writing).
-  * [Unzip and copy the BIOS file to the Fat32 partition](https://www.gigabytenordic.com/update-bios-using-q-flash-plus-x99-motherboards/).
-  * Make sure the BIOS file is named GIGABYTE.bin as the previous link instructs. This is the file name required by the BIOS Updater.
 1. Attach your Hackintosh OS drive to a real Mac. Use a [USB enclosure or drive dock](http://amzn.to/2h4wuY0) to do this.
 2. Use Disk Utility to erase and create a GPT drive.
   * _Mac OS Extended (Journaled)_ format
