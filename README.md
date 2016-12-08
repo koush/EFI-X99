@@ -29,9 +29,9 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 * [Samsung 850 EVO 1TB SSD](http://amzn.to/2h2yJuG) <sup>[5]</sup>
 
 #### Notes
-1. This motherboard is a little wonky, so while other Gigabyte or Asus X99 motherboards may work, my EFI repository may not work with it. Change at your own risk.
+1. This motherboard is a little wonky, so while other Gigabyte or Asus X99 motherboards may work, my EFI repository may not work with it. Change at your own risk. See Graphics Card Notes below.
 2. If you get a different CPU, you MUST modify [this line](https://github.com/koush/EFI-X99/blob/master/CLOVER/kexts/Other/VoodooTSCSync.kext/Contents/Info.plist#L54) in your checkout with the correct IOCPUNumber value. Each CPU core has two hyper threading cores. Subtract 1 to get the max IOCPUNumber (zero indexed). _IOCPUNumber = (Number of CPU Cores * 2) - 1_. For example, the 6950X has 10 cores. So (10*2)-1=19, as shown in the link.
-3. Do not get any Pascal (1070, 1080, or Titan X) hardware. It is not supported on Mac yet. I recommend sticking with 970/980 NVidia hardware. You must install [NVidia Web Drivers](http://www.insanelymac.com/forum/topic/306535-nvidia-web-driver-updates-for-el-capitan-update-10242016/) after booting. That will get your graphics card drivers installed, and you won't be stuck in VESA graphics mode.
+3. Do not get any Pascal (1070, 1080, or Titan X) hardware. It is not supported on Mac yet. I recommend sticking with 970/980 NVidia hardware. You must install [NVidia Web Drivers](http://www.insanelymac.com/forum/topic/306535-nvidia-web-driver-updates-for-el-capitan-update-10242016/) after booting. That will get your graphics card drivers installed, and you won't be stuck in VESA graphics mode. Also, see Graphics Card Notes below.
 4. Any USB wifi will work. I chose this card because this is the the best/easiest way to get AirDrop working. Totally optional though. You don't have to get any wifi at all.
 5. Any SSD or HDD drive works. Not sure about the new M.2 drives yet though.
 
@@ -83,6 +83,7 @@ _Optional: Repeat the above steps with the USB stick._
 ### Hackintosh Setup
 
 1. Assemble your computer.
+  * Make sure the video card is in the slot closest to the CPU. This matters, or you will get a post boot black screen. macOS will erroneously put your graphics card to sleep, and it can not be woken. The EFI partition contains a patch to prevent this from happening in the aforementioned PCIe slot.
 2. The OS drive should already be set up with macOS from a real Mac. Connect it to your Hackintosh if you haven't already.
 3. Boot into the BIOS. [Update the BIOS](https://www.gigabytenordic.com/update-bios-using-q-flash-plus-x99-motherboards/) using the USB stick which contains the update from the previous steps.
   * You may want to shut down and reset your CMOS by connecting the CMOS reset pins.
@@ -94,17 +95,7 @@ _Optional: Repeat the above steps with the USB stick._
 6. Choose Boot macOS
 7. You should be fully booted in with ancient VESA graphics (low resolution and framerate). We'll fix this in a sec.
 8. Remember those busted graphics? Just need to install the drivers now. [Get the appopriate download for your version of macOS](http://www.insanelymac.com/forum/topic/306535-nvidia-web-driver-updates-for-el-capitan-update-10242016/) and install it.
- * Hold off on restarting. Read on below in the Graphics section.
-
-### Graphics
-I'm not particularly happy with this part, as it requires modifying a system file every time there is an update.
-
-1. Download and run [AGDPfix](http://www.insanelymac.com/forum/files/file/424-agdpfix/).
-2. Restart.
-
-AGDPfix prevents macOS from erroneously putting your video card to sleep on boot. This app needs to be run after every update (when the file gets clobbered), to fix the computer starting in VESA mode. There's better, long term way, to fix this, but I haven't managed to get it working.
-
-[Here's the change](https://github.com/koush/EFI-X99/blob/master/AppleGraphicsControl.kext.diff) it makes in case one is curious, or wants to apply it manually (and use KextUtility to rebuild the kext cache). Just use the app though. You'll screw this up.
+ * Restart.
 
 Done!
 
@@ -120,5 +111,14 @@ git pull
 # Done!
 ```
 
-### Credits
+#### Graphics Card Notes - Black Screen
+If you chose a different graphics card or motherboard, there's a chance that your computer will boot to a black screen (graphics card is powered down, but macOS is running). You can fix this with the following:
+  * Hard Mode (permanent fix): [Rename your Graphics Card with an SSDT patch](https://www.tonymacx86.com/threads/ssdt-gpu-graphics-card-injection.183354/)
+  * Easy Mode (reapply after updates): Modify AppleGraphicsControl.kext using AGDPfix.
+    * Download and run [AGDPfix](http://www.insanelymac.com/forum/files/file/424-agdpfix/).
+    * Restart.
+    * AGDPfix needs to be run after every update (when the file gets clobbered), to fix the computer starting in VESA mode.
+    * [Here's the change](https://github.com/koush/EFI-X99/blob/master/AppleGraphicsControl.kext.diff) it makes in case one is curious, or wants to apply it manually (and use KextUtility to rebuild the kext cache). Just use the app though. You'll screw this up.
+
+#### Credits
 [nmano's Guide](https://www.tonymacx86.com/threads/mac-osx-10-12-with-x99-broadwell-e-family-and-haswell-e-family.197513/)
