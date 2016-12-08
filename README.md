@@ -41,7 +41,7 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 
 _This step is optional if you do not want a bootable USB stick and your BIOS is already up to date._
 
-Sometimes when tweaking things, the OS drive will fail to boot. It is extremely recommended to have a backup bootable USB stick (which you already formatted above). Make tweaks to the EFI boot on your macOS drive, and if it fails to boot, fall back to the USB stick to boot. The USB boot stick is optional, but encouraged.
+Sometimes when tweaking things, the OS drive will fail to boot. It is extremely recommended to have a backup bootable USB stick. Make tweaks to the EFI boot on your macOS drive, and if it fails to boot, fall back to the USB stick to boot. The USB boot stick is optional, but encouraged.
 
 1. Insert a USB drive into your real Mac. This will be used to update your BIOS. It will also optionally serve as a USB boot stick.
 2. Use Disk Utility to erase the USB stick and create a GPT drive with a single Fat32 partition. Fat32 is mandatory for the BIOS update process.
