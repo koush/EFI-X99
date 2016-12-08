@@ -70,7 +70,8 @@ On the real Mac, again. You will be performing the following steps (optionally t
 4. In Terminal:
 ```sh
 cd /Volumes/ESP/
-# wipe this out to overwrite with this EFI
+# Clover already creates an EFI directory with some files.
+# Wipe this out to overwrite with the EFI from this respository.
 rm -rf EFI
 # check out this EFI
 git clone https://github.com/koush/EFI-X99.git EFI
