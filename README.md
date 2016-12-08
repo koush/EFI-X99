@@ -57,8 +57,6 @@ Sometimes when tweaking things, the OS drive will fail to boot. It is extremely 
 
 ### Making your Drive Bootable
 
-Obviously, you want to make your macOS drive bootable. However, sometimes when tweaking things, the OS drive will fail to boot. It is *extremely* recommended to have a backup bootable USB stick (which you already formatted above). Make tweaks to the EFI boot on your macOS drive, and if it fails to boot, fall back to the USB stick to boot. The USB boot stick is optional, but encouraged.
-
 This EFI directory lives on an ESP (EFI System Partition). This partition is typically hidden from operating systems.
 
 First, get the prerequisite [Clover Bootloader](https://sourceforge.net/projects/cloverefiboot/files/Installer/) (I am using r3949 at time of writing).
