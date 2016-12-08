@@ -80,7 +80,7 @@ rm -rf EFI
 # check out this EFI
 git clone https://github.com/koush/EFI-X99.git EFI
 # If you chose a different processor, modify the aforementioned file in VoodooTSCSync.kext.
-# Exit the Terminal and unmount ESP! 
+# Exit the Terminal and unmount ESP in Finder.app. 
 ```
 
 _Optional: Repeat the above steps with the USB stick._
