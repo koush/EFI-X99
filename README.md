@@ -115,8 +115,8 @@ git pull
 
 #### Graphics Card Notes - Black Screen
 If you chose a different graphics card or motherboard, there's a chance that your computer will boot to a black screen (graphics card is powered down, but macOS is running). You can fix this with the following:
-  * Hard Mode (permanent fix): [Rename your Graphics Card with an SSDT patch](https://www.tonymacx86.com/threads/ssdt-gpu-graphics-card-injection.183354/)
-  * Easy Mode (reapply after updates): Modify AppleGraphicsControl.kext using AGDPfix.
+  * Hard Mode (permanent fix): [SSDT GPU Injection](https://www.tonymacx86.com/threads/ssdt-gpu-graphics-card-injection.183354/)
+  * Easy Mode (must reapply after every update): Modify AppleGraphicsControl.kext using AGDPfix.
     * Download and run [AGDPfix](http://www.insanelymac.com/forum/files/file/424-agdpfix/).
     * Restart.
     * AGDPfix needs to be run after every update (when the file gets clobbered), to fix the computer starting in VESA mode.
