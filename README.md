@@ -114,7 +114,15 @@ git pull
 ---
 
 #### Motherboard and Graphics Card Notes - Black Screen
-If you chose a different graphics card or motherboard, there's a chance that your computer will boot to a black screen (graphics card is powered down, but macOS is running). You can fix this with one of the two following methods:
+If you chose a different graphics card or motherboard, there's a chance that your computer will boot to a black screen (graphics card is powered down, but macOS is running).
+
+Booting past black screen in VESA mode:
+  1. Boot to the Clover boot selector.
+  2. Press space bar on boot macOS.
+  3. Select NVidia VESA mode.
+  4. Boot with selected options
+
+This will boot you without graphics acceleration. Then, you can fix the black screen (and restore acceleration) with one of the two following methods:
   * Hard Method (permanent fix): [SSDT GPU Injection](https://www.tonymacx86.com/threads/ssdt-gpu-graphics-card-injection.183354/)
   * Easy Method (must reapply after every macOS update): Modify AppleGraphicsControl.kext using AGDPfix.
     * Download and run [AGDPfix](http://www.insanelymac.com/forum/files/file/424-agdpfix/).
