@@ -42,8 +42,8 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 1. Use Disk Utility to erase and create a GPT drive.
   * _Mac OS Extended (Journaled)_ format
   * Name can be anything you want
-2. On the Mac, download the latest macOS (Sierra, 10.12.1 at time of writing).
-3. Run the macOS Installer.
+2. On the Mac, download the latest macOS Installer (Sierra, 10.12.1 at time of writing).
+3. Run the Install macOS app.
   * Before starting the install, change install target, and point it to the attached Hackintosh hard drive.
 4. Insert a USB drive into your real Mac. This will be used to update your BIOS.
   * Use Disk Utility to erase the USB stick and create a GPT drive with a single Fat32 partition. Fat32 is mandatory for the BIOS update process.
