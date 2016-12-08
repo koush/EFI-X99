@@ -99,7 +99,7 @@ _Optional: Repeat the above steps with the USB stick._
 6. Choose Boot macOS
 7. Set up your account, date and time, etc, and wrap up the install.
 8. You should be fully booted in with ancient VESA graphics (low resolution and framerate). Just need to install the drivers now. [Get the appopriate download for your version of macOS](http://www.insanelymac.com/forum/topic/312525-nvidia-web-driver-updates-for-macos-sierra-update-11032016/) and install it.
- * Restart.
+ * Restart when prompted.
 
 Done!
 
