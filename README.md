@@ -18,15 +18,15 @@ Total Cost: ~$3500 ($500 more if using a PCIe flash drive). A maxed out Mac Pro,
 
 You need to have mostly the same hardware for this to work. Parts that can not be swapped easily will be noted.
 
-* [Cooler Master HAF XB II EVO, HTPC Computer Case](http://amzn.to/2h4oiqI)
-* [Corsair RMx Series, RM750x, 750W, Fully Modular Power Supply](http://amzn.to/2g8zbe4)
-* [Gigabyte X99P-SLI Motherboard](http://amzn.to/2g8vxAR) <sup>[1]</sup>
-* [2 x Corsair Vengeance LPX 32GB DDR4 3200](http://amzn.to/2h4l729)
-* [Intel Core i7-6950X Processor](http://amzn.to/2gBbozC) <sup>[2]</sup>
-* [MasterAir Pro 3 CPU Air Cooler](http://amzn.to/2h4pL0k)
-* [Gigabyte GeForce GTX 980Ti](http://amzn.to/2h1rDXd) <sup>[3]</sup>
-* [BCM94360CD Wireless and Bluetooth Card](http://amzn.to/2g8AQ3m) <sup>[4]</sup>
-* [Samsung 850 EVO 1TB SSD](http://amzn.to/2h2yJuG) <sup>[5]</sup>
+* [Cooler Master HAF XB II EVO, HTPC Computer Case](http://amzn.to/2hg0oc7)
+* [Corsair RMx Series, RM750x, 750W, Fully Modular Power Supply](http://amzn.to/2gmcFOR)
+* [Gigabyte X99P-SLI Motherboard](http://amzn.to/2hobBKe) <sup>[1]</sup>
+* [2 x Corsair Vengeance LPX 32GB DDR4 3200](http://amzn.to/2gjWgWs)
+* [Intel Core i7-6950X Processor](http://amzn.to/2hfZgoz) <sup>[2]</sup>
+* [MasterAir Pro 3 CPU Air Cooler](http://amzn.to/2h7dpGK)
+* [Gigabyte GeForce GTX 980Ti](http://amzn.to/2hg0zUP) <sup>[3]</sup>
+* [BCM94360CD Wireless and Bluetooth Card](http://amzn.to/2ho63zs) <sup>[4]</sup>
+* [Samsung 850 EVO 1TB SSD](http://amzn.to/2gjVKYr) <sup>[5]</sup>
 
 #### Notes
 1. This motherboard is a little wonky, so while other Gigabyte or Asus X99 motherboards may work, my EFI repository may not work with it. Change at your own risk. See Motherboard and Graphics Card Notes below.
