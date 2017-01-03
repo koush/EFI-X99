@@ -36,7 +36,7 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 5. Any SSD or HDD drive works. Not sure about the new M.2 drives yet though.
 6. Motherboard on F01 (Retail Bios) - Will NOT boot a CPU newer than 5820K and you need a 5820K to flash the latest BIOS to boot any CPU other than this. So
   * Make sure its flashed to F22+ (ask your reseller, like NewEgg)
-  * Have access to a CPU which works on F01. [See list of supported CPUs](https://goo.gl/LFIjGn)
+  * Have access to a CPU which works on F01. [See list of supported CPUs](https://goo.gl/LFIjGn).
 
 [Full List of Hardware](http://a.co/7V7E9QI)
 
