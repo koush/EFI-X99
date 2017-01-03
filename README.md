@@ -34,7 +34,9 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 3. Do not get any Pascal (1070, 1080, or Titan X) hardware. It is not supported on Mac yet. I recommend sticking with 970/980 NVidia hardware. You must install [NVidia Web Drivers](http://www.insanelymac.com/forum/topic/306535-nvidia-web-driver-updates-for-el-capitan-update-10242016/) after booting. That will get your graphics card drivers installed, and you won't be stuck in VESA graphics mode. Also, see Motherboard and Graphics Card Notes below.
 4. Any USB wifi will work. I chose this card because this is the the best/easiest way to get AirDrop working. Totally optional though. You don't have to get any wifi at all.
 5. Any SSD or HDD drive works. Not sure about the new M.2 drives yet though.
-6. Motherboard on F01 (Retail Bios) - Will NOT boot a CPU newer than 5820K and you need a 5820K to flash the latest BIOS to boot any cpu other than this. So, A) Make sure its flashed to F22+ B) Have access to a CPU which works on F01 (LIST OF SUPPORTED CPUS - https://goo.gl/LFIjGn ) [ DANGER ] [ READ FIRST ]
+6. Motherboard on F01 (Retail Bios) - Will NOT boot a CPU newer than 5820K and you need a 5820K to flash the latest BIOS to boot any CPU other than this. So
+  * Make sure its flashed to F22+ (ask your reseller, like NewEgg)
+  * Have access to a CPU which works on F01. [See list of supported CPUs](https://goo.gl/LFIjGn)
 
 [Full List of Hardware](http://a.co/7V7E9QI)
 
