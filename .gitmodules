@@ -1,0 +1,3 @@
+[submodule "patch-nvme"]
+	path = patch-nvme
+	url = https://github.com/RehabMan/patch-nvme.git
