@@ -19,7 +19,7 @@ def find_entries_matching_name(ioreg_plist, name, depth=0):
             child_path = my_name + '.' + found
             yield child_path
 
-to_find = 'HackrNVMeController'
+to_find = 'IONVMeController'
 ioreg_string = subprocess.check_output(['ioreg', '-a'])
 ioreg_plist = plistlib.readPlistFromString(ioreg_string)
 
