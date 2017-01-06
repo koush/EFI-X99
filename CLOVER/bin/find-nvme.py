@@ -19,15 +19,14 @@ def find_entries_matching_name(ioreg_plist, name, depth=0):
             child_path = my_name + '.' + found
             yield child_path
 
-to_find = 'IONVMeController'
-ioreg_string = subprocess.check_output(['ioreg', '-a'])
-ioreg_plist = plistlib.readPlistFromString(ioreg_string)
 
 concatenated_templates = ''
-for found in find_entries_matching_name(ioreg_plist, to_find):
-    devpath = re.sub(r'.*?AppleACPIPlatformExpert', '_SB', found).replace('AppleACPIPCI.', '').replace('IOPP.', '').replace('.' + to_find, '')
+ioreg_plist = plistlib.readPlistFromString(subprocess.check_output(['ioreg', '-a']))
+for controller in ['IONVMeController', 'HackrNVMeController']:
+    for found in find_entries_matching_name(ioreg_plist, controller):
+        devpath = re.sub(r'.*?AppleACPIPlatformExpert', '_SB', found).replace('AppleACPIPCI.', '').replace('IOPP.', '').replace('.' + controller, '')
 
-    template = """
+        template = """
     External(%s, DeviceObj)
     Method(%s._DSM, 4)
     {
@@ -39,7 +38,7 @@ for found in find_entries_matching_name(ioreg_plist, to_find):
         })
     }
 """ % (devpath, devpath)
-    concatenated_templates += template
+        concatenated_templates += template
 
 dsl = """
 DefinitionBlock("", "SSDT", 2, "hack", "NVMe-Pcc", 0)
