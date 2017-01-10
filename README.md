@@ -101,6 +101,7 @@ _Optional: Repeat the above steps with the USB stick._
 ### Hackintosh Setup
 
 1. Assemble your computer.
+  * Connect your front panel USB ports to the USB_1 connector on the motherboard. Connecting to USB_2 and leaving USB_1 empty seems to cause the USB sluggishness.
   * Connect your mouse and keyboard to the USB 3.0 ports, and not the USB 2.0 ports. It's the second column of ports from the left. They are labelled on your motherboard I/O shield.
   * Make sure the video card is in the slot closest to the CPU. This matters, or you will get a post boot black screen. macOS will erroneously put your graphics card to sleep, and it can not be woken. The EFI partition contains a patch to prevent this from happening in the aforementioned PCIe slot.
 2. The OS drive should already be set up with macOS from a real Mac. Connect it to your Hackintosh if you haven't already.
