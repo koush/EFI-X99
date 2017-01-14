@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>16C68</string>
+	<string>16C67</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -15,7 +15,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>6.11-401-gdddd25c.1729</string>
+	<string>6.24.1421</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -23,7 +23,7 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1729</string>
+	<string>1421</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -66,8 +66,6 @@
 			<dict>
 				<key>Default</key>
 				<dict>
-					<key>DisableDevice</key>
-					<false/>
 					<key>Tachometers</key>
 					<dict>
 						<key>CPUFan</key>
@@ -90,13 +88,11 @@
 						<string>FAN3</string>
 						<key>PowerFan</key>
 						<string>FAN2</string>
-						<key>System Fan</key>
+						<key>SystemFan</key>
 						<string>FAN0</string>
 					</dict>
 					<key>Temperatures</key>
 					<dict>
-						<key>Ambient</key>
-						<string>TAMB</string>
 						<key>CPU Heatsink</key>
 						<string>TCPU</string>
 						<key>CPU Proximity</key>
@@ -139,8 +135,6 @@
 			<dict>
 				<key>Default</key>
 				<dict>
-					<key>DisableDevice</key>
-					<false/>
 					<key>MethodsToPoll</key>
 					<array/>
 					<key>PollingInterval</key>
@@ -149,14 +143,6 @@
 					<integer>5000</integer>
 					<key>VerboseLog</key>
 					<true/>
-				</dict>
-				<key>HP</key>
-				<dict>
-					<key>Default</key>
-					<dict>
-						<key>DisableDevice</key>
-						<true/>
-					</dict>
 				</dict>
 			</dict>
 		</dict>
@@ -176,22 +162,6 @@
 			<string>IOACPIPlatformDevice</string>
 			<key>IOResourceMatch</key>
 			<string>FakeSMCKeyStore</string>
-			<key>Platform Profile</key>
-			<dict>
-				<key>Default</key>
-				<dict>
-					<key>DisableDevice</key>
-					<false/>
-				</dict>
-				<key>HP</key>
-				<dict>
-					<key>Default</key>
-					<dict>
-						<key>DisableDevice</key>
-						<true/>
-					</dict>
-				</dict>
-			</dict>
 		</dict>
 		<key>Thermal Zone Monitoring Plugin</key>
 		<dict>
@@ -214,21 +184,11 @@
 			<dict>
 				<key>Default</key>
 				<dict>
-					<key>DisableDevice</key>
-					<false/>
 					<key>Temperatures</key>
 					<dict>
 						<key>Thermal Zone</key>
 						<string>_TMP</string>
 						<key>UseKelvins</key>
-						<true/>
-					</dict>
-				</dict>
-				<key>HP</key>
-				<dict>
-					<key>Default</key>
-					<dict>
-						<key>DisableDevice</key>
 						<true/>
 					</dict>
 				</dict>
@@ -252,7 +212,7 @@
 		<key>org.netkas.driver.FakeSMC</key>
 		<string>1212</string>
 	</dict>
-	<key>Source Code</key>
-	<string>"https://github.com/RehabMan/OS-X-FakeSMC-kozlek.git"</string>
+	<key>OSBundleRequired</key>
+	<string>Root</string>
 </dict>
 </plist>
