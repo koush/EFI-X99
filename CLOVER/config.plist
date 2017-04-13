@@ -65,13 +65,13 @@
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
-		<string>TD</string>
+		<string>Mac</string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>0</integer>
+		<integer>30</integer>
 		<key>XMPDetection</key>
 		<integer>1</integer>
 	</dict>
