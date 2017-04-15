@@ -186,6 +186,16 @@
 		<true/>
 		<key>KextsToPatch</key>
 		<array>
+		    <dict>
+	            <key>Comment</key>
+	            <string>change 15 port limit to 31 in XHCI kext (X99-series) 10.12, GA-X99P-SLI has possible 26 ports?</string>
+	            <key>Find</key>
+	            <data>g710////EA==</data>
+	            <key>Name</key>
+	            <string>AppleUSBXHCIPCI</string>
+	            <key>Replace</key>
+	            <data>g710////IA==</data>
+	        </dict>
 			<dict>
 				<key>Comment</key>
 				<string>5960XPatch 10.12 by mano</string>
