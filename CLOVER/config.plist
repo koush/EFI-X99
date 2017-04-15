@@ -176,10 +176,6 @@
 		<false/>
 		<key>FakeCPUID</key>
 		<string>0x0306a0</string>
-		<key>ForceKextsToLoad</key>
-		<array>
-			<string>/System/Library/Extensions/AppleGraphicsControl.kext/Contents/PlugIns/AppleGraphicsDevicePolicy.kext</string>
-		</array>
 		<key>KernelCpu</key>
 		<false/>
 		<key>KernelHaswellE</key>
@@ -204,22 +200,6 @@
 				<key>Replace</key>
 				<data>
 				SIH7AAAAgA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>5GHz Patch</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				QYP8/3QsSA==
-				</data>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				ZscGREXrKw==
 				</data>
 			</dict>
 		</array>
