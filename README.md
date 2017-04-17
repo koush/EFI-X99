@@ -21,7 +21,7 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 * [Cooler Master HAF XB II EVO, HTPC Computer Case](http://amzn.to/2hg0oc7)
 * [Corsair RMx Series, RM750x, 750W, Fully Modular Power Supply](http://amzn.to/2gmcFOR)
 * [Gigabyte X99P-SLI Motherboard](http://amzn.to/2hobBKe) <sup>[1]</sup>
-* [2 x Corsair Vengeance LPX 32GB DDR4 3200](http://amzn.to/2gjWgWs)
+* [4 x Corsair Vengeance LPX 32GB DDR4 3200](http://amzn.to/2gjWgWs)
 * [Intel Core i7-6950X Processor](http://amzn.to/2hfZgoz) <sup>[2]</sup>
 * [MasterAir Pro 3 CPU Air Cooler](http://amzn.to/2h7dpGK)
 * [Gigabyte GeForce GTX 980Ti](http://amzn.to/2hg0zUP) <sup>[3]</sup>
