@@ -24,7 +24,7 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 * [4 x Corsair Vengeance LPX 32GB DDR4 3200](http://amzn.to/2gjWgWs)
 * [Intel Core i7-6950X Processor](http://amzn.to/2hfZgoz) <sup>[2]</sup>
 * [MasterAir Pro 3 CPU Air Cooler](http://amzn.to/2h7dpGK)
-* [Gigabyte GeForce GTX 980Ti](http://amzn.to/2hg0zUP) <sup>[3]</sup>
+* [NVidia Titan Xp](https://www.nvidia.com/en-us/geforce/products/10series/titan-xp/) <sup>[3]</sup>
 * [BCM94360CD Wireless and Bluetooth Card](http://amzn.to/2ho63zs) <sup>[4]</sup>
 * [Samsung 960 EVO Series - 1TB PCIe NVMe - M.2 Internal SSD](http://amzn.to/2jaw6uR) <sup>[5]</sup>
 
