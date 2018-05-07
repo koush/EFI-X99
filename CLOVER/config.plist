@@ -12,7 +12,7 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>FixHDA_8000</key>
+				<key>FixHDA</key>
 				<true/>
 			</dict>
 			<key>Name</key>
@@ -55,7 +55,18 @@
 			<key>DropOem</key>
 			<false/>
 			<key>Generate</key>
-			<true/>
+			<dict>
+				<key>APLF</key>
+				<true/>
+				<key>APSN</key>
+				<true/>
+				<key>CStates</key>
+				<true/>
+				<key>PStates</key>
+				<true/>
+				<key>PluginType</key>
+				<true/>
+			</dict>
 		</dict>
 	</dict>
 	<key>Boot</key>
@@ -168,34 +179,42 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
+		<key>AppleIntelCPUPM</key>
+		<false/>
 		<key>AppleRTC</key>
 		<true/>
-		<key>AsusAICPUPM</key>
-		<false/>
 		<key>Debug</key>
 		<false/>
 		<key>FakeCPUID</key>
 		<string>0x0306a0</string>
 		<key>KernelCpu</key>
 		<false/>
-		<key>KernelHaswellE</key>
-		<true/>
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>
 		<true/>
+		<key>KernelXCPM</key>
+		<true/>
 		<key>KextsToPatch</key>
 		<array>
-		    <dict>
-	            <key>Comment</key>
-	            <string>change 15 port limit to 31 in XHCI kext (X99-series) 10.12, GA-X99P-SLI has possible 26 ports?</string>
-	            <key>Find</key>
-	            <data>g710////EA==</data>
-	            <key>Name</key>
-	            <string>AppleUSBXHCIPCI</string>
-	            <key>Replace</key>
-	            <data>g710////IA==</data>
-	        </dict>
+			<dict>
+				<key>Comment</key>
+				<string>change 15 port limit to 31 in XHCI kext (X99-series) 10.12, GA-X99P-SLI has possible 26 ports?</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g710////EA==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>AppleUSBXHCIPCI</string>
+				<key>Replace</key>
+				<data>
+				g710////IA==
+				</data>
+			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>5960XPatch 10.12 by mano</string>
@@ -205,6 +224,8 @@
 				<data>
 				SIH7AAAAQA==
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>IOPCIFamily</string>
 				<key>Replace</key>
@@ -223,10 +244,48 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
+		<key>BiosReleaseDate</key>
+		<string>02/02/2018</string>
+		<key>BiosVendor</key>
+		<string>Apple Inc.</string>
+		<key>BiosVersion</key>
+		<string>MP61.88Z.0122.B00.1802021814</string>
+		<key>Board-ID</key>
+		<string>Mac-F60DEB81FF30ACF6</string>
+		<key>BoardManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>F5K327101QXF5051M</string>
+		<key>BoardType</key>
+		<integer>11</integer>
+		<key>BoardVersion</key>
+		<string>1.0</string>
+		<key>ChassisAssetTag</key>
+		<string>Pro-Enclosure</string>
+		<key>ChassisManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>ChassisType</key>
+		<string>0x02</string>
+		<key>Family</key>
+		<string>MacPro</string>
+		<key>FirmwareFeatures</key>
+		<string>0xE80FE137</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
+		<key>LocationInChassis</key>
+		<string>Part Component</string>
+		<key>Manufacturer</key>
+		<string>Apple Inc.</string>
+		<key>Mobile</key>
+		<false/>
+		<key>PlatformFeature</key>
+		<string>0x04</string>
 		<key>ProductName</key>
 		<string>MacPro6,1</string>
 		<key>SerialNumber</key>
-		<string>C02KR9RIF693</string>
+		<string>F5KL11XVF9VM</string>
+		<key>Version</key>
+		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
