@@ -1,6 +1,6 @@
 # My Hackintosh
 
-This repository is the EFI directory (basically, a boot drive) that can boot a macOS (10.12.1, at time of writing) installation. Think of the EFI as the isolated magic boot image that will let you start macOS on unofficial hardware. Ideally, all your system compatibility changes are in this boot partition, away from macOS itself. You don't want a macOS update accidentally breaking your system.
+This repository is the EFI directory (basically, a boot drive) that can boot a macOS (10.13.4, at time of writing) installation. Think of the EFI as the isolated magic boot image that will let you start macOS on unofficial hardware. Ideally, all your system compatibility changes are in this boot partition, away from macOS itself. You don't want a macOS update accidentally breaking your system.
 This EFI will only work with my specific setup, but may work with similar ones via tweaking.
 
 ![macpro6_1_-_geekbench_browser](https://cloud.githubusercontent.com/assets/73924/20958327/f1370bc8-bc09-11e6-823b-833d1da15cbd.png)
@@ -18,7 +18,7 @@ Total Cost: ~$3500 ($500 more if using a PCIe flash drive). A maxed out Mac Pro,
 
 You need to have mostly the same hardware for this to work. Parts that can not be swapped easily will be noted.
 
-* [Cooler Master HAF XB II EVO, HTPC Computer Case](http://amzn.to/2hg0oc7)
+* [Corsair Carbide Clear 400C Compact Mid-Tower Case ](http://a.co/6L2qEmn)
 * [Corsair RMx Series, RM750x, 750W, Fully Modular Power Supply](http://amzn.to/2gmcFOR)
 * [Gigabyte X99P-SLI Motherboard](http://amzn.to/2hobBKe) <sup>[1]</sup>
 * [4 x Corsair Vengeance LPX 32GB DDR4 3200](http://amzn.to/2gjWgWs)
