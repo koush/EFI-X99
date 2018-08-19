@@ -199,20 +199,16 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>change 15 port limit to 31 in XHCI kext (X99-series) 10.12, GA-X99P-SLI has possible 26 ports?</string>
-				<key>Disabled</key>
-				<false/>
+				<string>Remove USB port limit in XHCI kext</string>
 				<key>Find</key>
 				<data>
-				g710////EA==
+				g32IDw+DpwQAAA==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
-				<string>AppleUSBXHCIPCI</string>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>
-				g710////IA==
+				g32ID5CQkJCQkA==
 				</data>
 			</dict>
 			<dict>
