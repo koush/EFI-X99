@@ -24,7 +24,7 @@ You need to have mostly the same hardware for this to work. Parts that can not b
 * [4 x Corsair Vengeance LPX 32GB DDR4 3200](http://amzn.to/2gjWgWs)
 * [Intel Core i7-6950X Processor](http://amzn.to/2hfZgoz) <sup>[2]</sup>
 * [MasterAir Pro 3 CPU Air Cooler](http://amzn.to/2h7dpGK)
-* [NVidia Titan Xp](https://www.nvidia.com/en-us/geforce/products/10series/titan-xp/) <sup>[3]</sup>
+* [Sapphire Radeon Pulse RX 580](https://www.amazon.com/gp/product/B06ZZ6FMF8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 * [BCM94360CD Wireless and Bluetooth Card](http://amzn.to/2ho63zs) <sup>[4]</sup>
 * [Samsung 960 EVO Series - 1TB PCIe NVMe - M.2 Internal SSD](http://amzn.to/2jaw6uR) <sup>[5]</sup>
 
@@ -133,23 +133,6 @@ git pull
 ```
 
 ---
-
-#### Motherboard and Graphics Card Notes - Black Screen
-If you chose a different graphics card or motherboard, there's a chance that your computer will boot to a black screen (graphics card is powered down, but macOS is running).
-
-Booting past black screen in VESA mode:
-  1. Boot to the Clover boot selector.
-  2. Press space bar on boot macOS.
-  3. Select NVidia VESA mode.
-  4. Boot with selected options
-
-This will boot you without graphics acceleration. Then, you can fix the black screen (and restore acceleration) with one of the two following methods:
-  * Hard Method (permanent fix): [SSDT GPU Injection](https://www.tonymacx86.com/threads/ssdt-gpu-graphics-card-injection.183354/)
-  * Easy Method (must reapply after every macOS update): Modify AppleGraphicsControl.kext using AGDPfix.
-    * Download and run [AGDPfix](http://www.insanelymac.com/forum/files/file/424-agdpfix/).
-    * Restart.
-    * AGDPfix needs to be run after every update (because the kext file change gets clobbered).
-    * [Here's the change](https://github.com/koush/EFI-X99/blob/master/AppleGraphicsControl.kext.diff) it makes in case one is curious, or wants to apply it manually (and use KextUtility to rebuild the kext cache). Just use the app though. You'll screw this up.
 
 #### Credits
 [nmano's Guide](https://www.tonymacx86.com/threads/mac-osx-10-12-with-x99-broadwell-e-family-and-haswell-e-family.197513/)
