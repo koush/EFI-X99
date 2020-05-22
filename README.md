@@ -1,6 +1,6 @@
 # My Hackintosh
 
-This repository is the EFI directory (basically, a boot drive) that can boot a macOS (10.13.4, at time of writing) installation. Think of the EFI as the isolated magic boot image that will let you start macOS on unofficial hardware. Ideally, all your system compatibility changes are in this boot partition, away from macOS itself. You don't want a macOS update accidentally breaking your system.
+This repository is the EFI directory (basically, a boot drive) that can boot a macOS (10.15.3, at time of writing) installation. Think of the EFI as the isolated magic boot image that will let you start macOS on unofficial hardware. Ideally, all your system compatibility changes are in this boot partition, away from macOS itself. You don't want a macOS update accidentally breaking your system.
 This EFI will only work with my specific setup, but may work with similar ones via tweaking.
 
 ![macpro6_1_-_geekbench_browser](https://cloud.githubusercontent.com/assets/73924/20958327/f1370bc8-bc09-11e6-823b-833d1da15cbd.png)
