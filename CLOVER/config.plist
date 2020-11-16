@@ -21,6 +21,29 @@
 			<array>
 				<dict>
 					<key>Comment</key>
+					<string>change _OSI to XOSI</string>
+					<key>Find</key>
+					<data>X09TSQ==</data>
+					<key>Replace</key>
+					<data>WE9TSQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EHC1 to EH01</string>
+					<key>Find</key>
+					<data>RUhDMQ==</data>
+					<key>Replace</key>
+					<data>RUgwMQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EHC2 to EH02</string>
+					<key>Find</key>
+					<data>RUhDMg==</data>
+					<key>Replace</key>
+					<data>RUgwMg==</data>
+				</dict>
+				<dict>
 					<string>XHCI to XHC_</string>
 					<key>Disabled</key>
 					<false/>
@@ -32,6 +55,58 @@
 					<data>
 					WEhDXw==
 					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change XHC1 to XHC</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>WEhDMQ==</data>
+					<key>Replace</key>
+					<data>WEhDXw==</data>
+				</dict>
+				<dict>
+				        <key>Comment</key>
+				        <string>Rename EC0 to EC (USB Power)</string>
+				        <key>Disabled</key>
+				        <false/>
+				        <key>Find</key>
+				        <data>
+				        RUMwXw==
+				        </data>
+				        <key>Replace</key>
+				        <data>
+				        RUNfXw==
+				        </data>
+				</dict>
+				<dict>
+				        <key>Comment</key>
+				        <string>Rename H_EC to EC (USB Power)</string>
+				        <key>Disabled</key>
+				        <false/>
+				        <key>Find</key>
+				        <data>
+				        SF9FQw==
+				        </data>
+				        <key>Replace</key>
+				        <data>
+				        RUNfXw==
+				        </data>
+				</dict>
+				<dict>
+				        <key>Comment</key>
+				        <string>Rename ECDV to EC (USB Power)</string>
+				        <key>Disabled</key>
+				        <false/>
+				        <key>Find</key>
+				        <data>
+				        RUNEVg==
+				        </data>
+				        <key>Replace</key>
+				        <data>
+				        RUNfXw==
+				        </data>
 				</dict>
 			</array>
 			<key>ReuseFFFF</key>
@@ -96,7 +171,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<string>1</string>
+			<integer>1</integer>
 		</dict>
 		<key>FakeID</key>
 		<dict>
@@ -199,17 +274,35 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Remove USB port limit in XHCI kext</string>
+				<string>USB Port Limit Patch 1 PMHeart/DalianSky</string>
+				<key>Disabled</key>
+				<true/>
 				<key>Find</key>
-				<data>
-				g32IDw+DpwQAAA==
-				</data>
+				<data>g/sPDw==</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<key>Replace</key>
+				<data>g/s/Dw==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port Limit Patch 2 PMHeart/DalianSky</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>g/kPDw==</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
-				<data>
-				g32ID5CQkJCQkA==
-				</data>
+				<data>g/k/Dw==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -217,17 +310,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				SIH7AAAAQA==
-				</data>
+				<data>SIH7AAAAQA==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
 				<string>IOPCIFamily</string>
 				<key>Replace</key>
-				<data>
-				SIH7AAAAgA==
-				</data>
+				<data>SIH7AAAAgA==</data>
 			</dict>
 		</array>
 	</dict>
