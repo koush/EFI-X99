@@ -1,6 +1,6 @@
 # Big Sur Update
 
-Clover is deprecated, and I was unsuccessful to get this updated to work with OpenCore and Big Sur. This build served me well for several years, but rather than try to fight a dated and not widely adopted X99 platform on hackintosh, I upgraded to a 10900k system.
+Clover is deprecated, and I was unsuccessful to get this updated to work with OpenCore and Big Sur. This build served me well for 4 years, and rather than try to struggle through to rebuild a dated and not widely adopted X99 platform on hackintosh, I upgraded to a 10900k system.
 
 # My Hackintosh
 
