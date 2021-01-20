@@ -1,3 +1,7 @@
+# Big Sur Update
+
+Clover is deprecated, and I was unsuccessful to get this updated to work with OpenCore and Big Sur. This build served me well for several years, but rather than try to fight a dated and not widely adopted X99 platform on hackintosh, I upgraded to a 10900k system.
+
 # My Hackintosh
 
 This repository is the EFI directory (basically, a boot drive) that can boot a macOS (10.15.3, at time of writing) installation. Think of the EFI as the isolated magic boot image that will let you start macOS on unofficial hardware. Ideally, all your system compatibility changes are in this boot partition, away from macOS itself. You don't want a macOS update accidentally breaking your system.
